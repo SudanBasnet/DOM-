@@ -34,11 +34,11 @@
 
 //changing CSS properties
 
-const googleelm = document.querySelector(`[href="google.com"]`);
+// const googleelm = document.querySelector(`[href="google.com"]`);
 
-googleelm.style.fontSize = "2rem";
-googleelm.style.color = "red";
-googleelm.style.textDecoration = "None";
+// googleelm.style.fontSize = "2rem";
+// googleelm.style.color = "red";
+// googleelm.style.textDecoration = "None";
 
 // const attbr = googleelm.getAttribute("style");
 // console.log(attbr);
@@ -49,4 +49,13 @@ googleelm.style.textDecoration = "None";
 //     "font-size: 2rem; color: red; text-decoration: underline;",
 //   );
 
-document.querySelector("a").removeAttribute("href");
+// document.querySelector("a").removeAttribute("href");
+
+//changing HTML class names
+
+const elm = document.querySelector(".message");
+// elm.className = "someclass";
+// elm.classList.add("success");
+// elm.classList.remove("message");
+// elm.classList.toggle("success");
+console.log(elm.classList); //gives actual name of all class
