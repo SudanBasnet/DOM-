@@ -31,3 +31,22 @@
 
 // elm.removeChild(document.querySelector(`[href="google.com"]`));
 // elm.replaceChild(paraElm, document.querySelector(`[href="google.com"]`));
+
+//changing CSS properties
+
+const googleelm = document.querySelector(`[href="google.com"]`);
+
+googleelm.style.fontSize = "2rem";
+googleelm.style.color = "red";
+googleelm.style.textDecoration = "None";
+
+// const attbr = googleelm.getAttribute("style");
+// console.log(attbr);
+// document
+//   .querySelector(".display")
+//   .setAttribute(
+//     "style",
+//     "font-size: 2rem; color: red; text-decoration: underline;",
+//   );
+
+document.querySelector("a").removeAttribute("href");
