@@ -53,9 +53,34 @@
 
 //changing HTML class names
 
-const elm = document.querySelector(".message");
+// const elm = document.querySelector(".message");
 // elm.className = "someclass";
 // elm.classList.add("success");
 // elm.classList.remove("message");
 // elm.classList.toggle("success");
-console.log(elm.classList); //gives actual name of all class
+// console.log(elm.classList); //gives actual name of all class
+
+//DOM events
+
+// const changeUI = (e) => {
+//   console.log("got event triggered");
+//   console.log(e);
+// };
+let counter = 0;
+const elm = document.querySelector(".display");
+// elm.addEventListener("click", (e) => {
+//   //   console.log("got event triggered");
+//   //   console.log(e);
+//   elm.classList.toggle("success");
+// });
+
+const func = (e) => {
+  //   console.log("got event triggered");
+  //   console.log(e);
+  elm.classList.toggle("success");
+  console.log(counter++);
+  if (counter === 3) elm.removeEventListener("click", func);
+};
+elm.addEventListener("click", func);
+
+// elm.removeEventListener("click", func);
